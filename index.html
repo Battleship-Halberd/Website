@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Fira Code ">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link id="theme" rel="stylesheet" href="css/default.css" type="text/css" />
+  <title>My Personal Blog</title>
+  
+  <script>
+    window.onload = (event) => {
+      
+      var entries = document.querySelectorAll(".entry");
+      showEntry(entries.length - 1)
+    }
+
+    function showEntry(my_index) {
+      console.log("howdy");
+      console.log(my_index);
+      
+      var entries = document.querySelectorAll(".entry");
+      var len = entries.length
+      
+      // set all blog entries to invisible (display: none;)
+      entries.forEach(function (entry) {
+        entry.style.display = "none";
+      });
+      
+      // set only 1 blog entry to show (display: block;)
+      entries[len - my_index - 1].style.display = "block"
+    }
+  </script>
+
+</head>
+<body>
+  <header>
+    <h1>Hey Squish</h1>
+  </header>
+  <topbar>
+    <a href="">Home</a>
+    <a href="javascript:void(0);" onclick="showEntry(1)">Blog Archives</a>
+    <a href="">Contact Me</a>
+  </topbar>
+  <main>
+    <div id="left">
+      <div>
+        <big>Change Colour</big>
+        <ul>
+        <li><a href="javascript:void(0);" onclick="setdefault()">Austere Purple</a></li>
+        <script>
+            function setdefault() {
+              theme.setAttribute('href', 'css/default.css');
+            }
+        </script>
+        <li><a href="javascript:void(0);" onclick="setgreen()">GB Classic</a></li>
+        <script>
+            function setgreen() {
+              theme.setAttribute('href', 'css/green.css');
+            }
+        </script>
+        <li><a href="javascript:void(0);" onclick="setgrey()">Boring Grey</a></li>
+        <script>
+            function setgrey() {
+              theme.setAttribute('href', 'css/grey.css');
+            }
+        </script>
+        <li><a href="javascript:void(0);" onclick="setyellow()">Sunshine Yellow</a></li>
+        <script>
+            function setyellow() {
+              theme.setAttribute('href', 'css/yellow.css');
+            }
+        </script>
+        <li><a href="javascript:void(0);" onclick="setblue()">Royal Blue</a></li>
+        <script>
+            function setblue() {
+              theme.setAttribute('href', 'css/blue.css');
+            }
+        </script>
+
+
+
+      </div>
+      <div>
+        <big>Recent Posts</big>
+        <ul>
+          <!-- <li><a href="javascript:void(0);" onclick="showEntry(NUMBER)">TITLE</a></li> -->
+          <li><a href="javascript:void(0);" onclick="showEntry(2)">Index</a></li>
+          <li><a href="javascript:void(0);" onclick="showEntry(1)">Click me</a></li>
+          <li><a href="javascript:void(0);" onclick="showEntry(0)">Latest post</a></li>
+        </ul>
+      </div>
+      <div>
+        <big>External Links</big>
+        <ul>
+          <li><a href="https://discord.gg/qbQa2Vy2cA">Discord</a></li>
+          <li><a href="https://battleship-halbird.itch.io/">Itch.io</a></li>
+          <li><a href="https://github.com/Battleship-Halberd">Github</a></li>
+          <li><a href="https://backloggd.com/u/Chef_Bloof/">Backloggd</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="center">
+      <h2>Yes, you, squishyman. </h2>
+      <div id="entries">
+        <big>Main</big>
+        <div>
+          <div class="entry">
+            <p><b>This</b> is <i>the</i> Index</p>
+          </div>
+          <div class="entry">
+            <p>Turns out I'm really good at this web dev stuff.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="entry">
+            <p>This is the latest post</p>
+          </div>
+        </div>
+      </div>
+      <div id="boringlegal">
+        <big>Boring legal stuff</big>
+        <div>
+            <p>+ Website made by Craiture deLelioaha.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
