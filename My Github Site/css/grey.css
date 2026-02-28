@@ -1,0 +1,87 @@
+/* Background colour: 150413 */
+/* Box and Links Colour: 635c6d */
+/* Text Colour: ffffd1 */
+html {
+  scrollbar-width: none;
+}
+body {
+  margin: 0;
+  padding-inline: 3rem;
+  background-color: #150413;
+  font-family: 'Fira Code';
+}
+* {
+  color: #ffffd1;
+}
+header {
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  border: 1px solid #635c6d;
+  margin: 0;
+  margin-top: 10px;
+  padding-block: 10px;
+}
+a {
+  text-decoration: none; 
+  color: #635c6d;
+}
+a:hover, a:hover * { color: #ffffd1; }
+topbar {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #635c6d;
+}
+topbar > a { font-size: 1.2rem; }
+main {
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 10px;
+  padding-block: 3px;
+}
+/* anchor elements (<a>) which will be our clickables are "inline display" by default so we make them "block display" */
+#entries { padding: 1rem; }
+#entries > a {
+  display: block;
+  width: 100%;
+  margin-block: 3px;
+  padding-block: 3px;
+  padding-inline: 5px;
+  background-color: #150413;
+  border-radius: 5px;
+}
+#entries > a:hover {
+  color: #ffffd1;
+  background-color: #635c6d;
+}
+
+#post {
+  min-height: 512px;
+  border: 1px solid #ffffd1;
+  position: fixed;
+  display: flex;
+}
+#boringlegal {
+  margin-block: 10px;
+  padding-block: 3px;
+  padding-inline: 30px;
+}
+big {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+main > div > div {
+  margin-block: 10px;
+  padding-block: 3px;
+  border: 1px solid #635c6d;
+}
+#left { width: calc(20% - 20px); }
+#center {width: calc(80% - 20px);}
