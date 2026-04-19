@@ -1,131 +1,152 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Fira Code ">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link id="theme" rel="stylesheet" href="css/default.css" type="text/css" />
-  <title>My Personal Blog</title>
-  
-  <script>
-    window.onload = (event) => {
-      
-      var entries = document.querySelectorAll(".entry");
-      showEntry(entries.length - 1)
-    }
-
-    function showEntry(my_index) {
-      console.log("howdy");
-      console.log(my_index);
-      
-      var entries = document.querySelectorAll(".entry");
-      var len = entries.length
-      
-      // set all blog entries to invisible (display: none;)
-      entries.forEach(function (entry) {
-        entry.style.display = "none";
-      });
-      
-      // set only 1 blog entry to show (display: block;)
-      entries[len - my_index - 1].style.display = "block"
-    }
-  </script>
-
-</head>
-<body>
-  <header>
-    <h1>Hey Squish</h1>
-  </header>
-  <topbar>
-    <a href="">Home</a>
-    <a href="javascript:void(0);" onclick="showEntry(1)">Blog Archives</a>
-    <a href="">Contact Me</a>
-  </topbar>
-  <main>
-    <div id="left">
-      <div>
-        <big>Change Colour</big>
-        <ul>
-        <li><a href="javascript:void(0);" onclick="setdefault()">Austere Purple</a></li>
-        <script>
-            function setdefault() {
-              theme.setAttribute('href', 'css/default.css');
-            }
-        </script>
-        <li><a href="javascript:void(0);" onclick="setgreen()">GB Classic</a></li>
-        <script>
-            function setgreen() {
-              theme.setAttribute('href', 'css/green.css');
-            }
-        </script>
-        <li><a href="javascript:void(0);" onclick="setgrey()">Boring Grey</a></li>
-        <script>
-            function setgrey() {
-              theme.setAttribute('href', 'css/grey.css');
-            }
-        </script>
-        <li><a href="javascript:void(0);" onclick="setyellow()">Sunshine Yellow</a></li>
-        <script>
-            function setyellow() {
-              theme.setAttribute('href', 'css/yellow.css');
-            }
-        </script>
-        <li><a href="javascript:void(0);" onclick="setblue()">Royal Blue</a></li>
-        <script>
-            function setblue() {
-              theme.setAttribute('href', 'css/blue.css');
-            }
-        </script>
-
-
-
-      </div>
-      <div>
-        <big>Recent Posts</big>
-        <ul>
-          <!-- <li><a href="javascript:void(0);" onclick="showEntry(NUMBER)">TITLE</a></li> -->
-          <li><a href="javascript:void(0);" onclick="showEntry(2)">Index</a></li>
-          <li><a href="javascript:void(0);" onclick="showEntry(1)">Click me</a></li>
-          <li><a href="javascript:void(0);" onclick="showEntry(0)">Latest post</a></li>
-        </ul>
-      </div>
-      <div>
-        <big>External Links</big>
-        <ul>
-          <li><a href="https://discord.gg/qbQa2Vy2cA">Discord</a></li>
-          <li><a href="https://battleship-halbird.itch.io/">Itch.io</a></li>
-          <li><a href="https://github.com/Battleship-Halberd">Github</a></li>
-          <li><a href="https://backloggd.com/u/Chef_Bloof/">Backloggd</a></li>
-        </ul>
-      </div>
-    </div>
-    <div id="center">
-      <h2>Yes, you, squishyman. </h2>
-      <div id="entries">
-        <big>Main</big>
-        <div>
-          <div class="entry">
-            <p><b>This</b> is <i>the</i> Index</p>
-          </div>
-          <div class="entry">
-            <p>Turns out I'm really good at this web dev stuff.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="entry">
-            <p>This is the latest post</p>
-          </div>
-        </div>
-      </div>
-      <div id="boringlegal">
-        <big>Boring legal stuff</big>
-        <div>
-            <p>+ Website made by Craiture deLelioaha.</p>
-        </div>
-      </div>
-    </div>
-  </main>
-</body>
-
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" type="image/x-icon" href="css/favicon.ico">
+		<link rel="stylesheet" href="css/index.css">
+		<title>Craiture's Blog</title>
+		<script src="css/content.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Hey Squish!</h1>
+		</header>
+		<div id="topbar">
+			<h3><a href="#entry0">Home</a></h3>
+			<h3><a href="#entry1">Archive</a></h3>
+			<h3><a href="#entry2">Contact Me!</a></h3>
+		</div>
+		<main>
+			<div class="flexContainer">
+				<div id="left">
+					<div class="chess">
+						<section class="board"></section>
+					</div>
+					<div class="inset">
+						<h3>Change Colour</h3>
+						<ul id="themes"></ul>
+						<p><a href="#entry3">See more...</a></p>
+					</div>
+						<section class="shortboard"></section>
+					<div class="inset">
+						<h3>Recent Posts</h3>
+						<ul id="recentPosts"></ul>
+					</div>
+					<div class="chess">
+						<section class="shortboard"></section>
+					</div>
+					<div class="inset">
+						<h3>External Links</h3>
+						<ul>
+							<li><a href="https://discord.gg/qbQa2Vy2cA">Discord</a></li>
+							<li><a href="https://battleship-halbird.itch.io/">Itch.io</a></li>
+							<li><a href="https://github.com/Battleship-Halberd">Github</a></li>
+							<li><a href="https://backloggd.com/u/Chef_Bloof/">Backloggd</a></li>
+						</ul>
+					</div>
+				</div>
+				<div id="center">
+					<div class="subheader"><h2>Guess who also made a website in a day or so.</h2></div>
+					<div id="entries"></div>
+					<div>
+						<h5>Boring Legal Stuff</h5>
+						<ul>
+							<li>Website made by Craiture deLelioaha.</li>
+							<li>Site last updated on March 6th, 2026</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<script>
+			function generateThemes() {
+				const list = document.getElementById("themes");
+				const all = document.getElementById("allThemes");
+				list.innerHTML = ""; if(all) all.innerHTML = "";
+				const makeLink = (name, colors) => Object.assign(document.createElement("a"), {
+					href:"javascript:void(0)",
+					textContent:name,
+					onclick:()=>theme(...colors)
+				});
+				const makeItem = pair => {
+					const li = document.createElement("li");
+					li.append(makeLink(pair.names[0], pair.colors), " ",
+							  makeLink(pair.names[1], [...pair.colors].reverse()));
+					return li;
+				};
+				[...themePairs].sort(()=>Math.random()-.5).slice(0,10)
+					.sort((a,b)=>a.names[0].localeCompare(b.names[0]))
+					.forEach(p=>list.appendChild(makeItem(p)));
+				if(all) [...themePairs].sort((a,b)=>a.names[0].localeCompare(b.names[0]))
+					.forEach(p=>all.appendChild(makeItem(p)));
+			}
+			function applyRandomTheme(){
+				const p = themePairs[Math.random()*themePairs.length|0];
+				Math.random()<.5 ? theme(...p.colors) : theme(p.colors[2],p.colors[1],p.colors[0]);
+			}
+			function theme(bg,box,font){
+				document.documentElement.style.cssText =
+				`--m-background:${bg};--m-boxcolor:${box};--m-fontcolor:${font}`;
+			}
+			function makeBoard(el, rows, cols) {
+				let html = '';
+				for (let y = 0; y < rows; y++) {
+					html += '<div class="step_wrapper">';
+					for (let x = 0; x < cols; x++) {
+						html += `<div class="step_box ${(x + y) % 2 ? 'unselected' : 'selected'}"></div>`;
+					}
+					html += '</div>';
+				}
+				el.innerHTML = html;
+			}
+			document.onclick = e => {
+				const b = e.target.closest('.step_box');
+				if (b) b.classList.toggle('selected'), b.classList.toggle('unselected');
+			};
+			const entriesContainer = document.getElementById('entries');
+			const recentPosts = document.getElementById('recentPosts');
+			diaryEntries.forEach((entry, i) => {
+				const div = document.createElement('div');
+				div.className = 'entry';
+				div.id = `entry${i}`;
+				div.style.display = 'none';
+				div.innerHTML = `<h4>${entry.title}</h4>${entry.content}`;
+				entriesContainer.appendChild(div);
+			});
+			const allPostsList = document.getElementById('allPosts');
+			if (allPostsList) {
+				diaryEntries.forEach((entry, i) => {
+					const li = document.createElement('li');
+					li.innerHTML = `Entry: <a href="#entry${i}">${entry.title}</a>`;
+					allPostsList.appendChild(li);
+				});
+			}
+			const startIndex = Math.max(0, diaryEntries.length - 5);
+			for (let i = diaryEntries.length - 1; i >= startIndex; i--) {
+				const li = document.createElement('li');
+				li.innerHTML = `Entry: <a href="#entry${i}">${diaryEntries[i].title}</a>`;
+				recentPosts.appendChild(li);
+			}
+			function showEntry(i) {
+				diaryEntries.forEach((_, idx) => {
+					document.getElementById(`entry${idx}`).style.display = 'none';
+				});
+				document.getElementById(`entry${i}`).style.display = 'block';
+			}
+			function showFromHash() {
+				const m = location.hash.match(/entry(\d+)/);
+				if (m) showEntry(parseInt(m[1]));
+			}
+			window.addEventListener('hashchange', showFromHash);
+			window.addEventListener('load', () => {
+				applyRandomTheme(); 
+				generateThemes();
+				showFromHash();
+				document.querySelectorAll('.board').forEach(b => makeBoard(b, 16, 16));
+				document.querySelectorAll('.shortboard').forEach(b => makeBoard(b, 2, 16));
+				if (!location.hash) showEntry(0);
+			});
+			</script>
+		</main>
+	</body>
 </html>
