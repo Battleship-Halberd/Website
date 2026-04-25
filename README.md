@@ -1,1 +1,1 @@
-yo what up world
+Sup! This is a webbed site that I made to blog with!

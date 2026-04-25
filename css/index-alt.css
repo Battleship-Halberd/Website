@@ -1,0 +1,229 @@
+/* =========================
+   RESET / BASE
+========================= */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: "OpenSansCondensed", sans-serif;
+	line-height: 1.5;
+	color: var(--m-fontcolor);
+	background: var(--m-boxcolor);
+}
+::selection {
+	background: var(--m-boxcolor);
+	color: var(--m-fontcolor);
+}
+/* =========================
+   FONTS
+========================= */
+@font-face {
+	font-family: "OpenSansCondensed";
+	src: url("OpenSans_SemiCondensed-Regular.woff") format("woff");
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSansCondensed";
+	src: url("OpenSans_SemiCondensed-Italic.woff") format("woff");
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSansCondensed";
+	src: url("OpenSans_SemiCondensed-SemiBold.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+@font-face {
+	font-family: "OpenSansCondensed";
+	src: url("OpenSans_SemiCondensed-SemiBoldItalic.woff") format("woff");
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+}
+/* =========================
+   TYPOGRAPHY
+========================= */
+header,
+h1,
+h2,
+h3 {
+	text-align: center;
+}
+h1 {
+	font-size: calc(36px + 3vmin);
+	margin: 0;
+	}
+h2 {
+	font-size: calc(28px + 2vmin);
+	margin: 0;
+}
+h3 {
+	font-size: calc(20px + 1.5vmin);
+	margin: 0;
+}
+h4 {
+	font-size: calc(16px + 1.5vmin);
+	margin: 0;
+}
+h5 {
+	font-size: calc(12px + 1.25vmin);
+	margin: 0;
+}
+p {
+	font-size: calc(12px + 1vmin);
+	margin: 0 0 1.5vmin;
+	padding-inline: 2vmin;
+}
+li {
+	font-size: calc(15px + 0.5vmin);
+	margin-inline: 0.5vmin;
+}
+strong,
+#bold {
+	font-weight: 700;
+}
+a {
+	color: var(--m-boxcolor);
+	text-decoration: none;
+}
+a:hover,
+a:hover * {
+	color: var(--m-fontcolor);
+}
+/* =========================
+   LAYOUT
+========================= */
+main {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	padding-block: 3px;
+}
+.flexContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+}
+#topbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	margin: 2.5vmin 20px;
+	padding: 1vmin;
+	border: 0.1vmin solid var(--m-boxcolor);
+	background: var(--m-background);
+	font-size: calc(20px + 1.5vmin);
+}
+main > div > div > div {
+	border: 0.1vmin solid var(--m-boxcolor);
+	background: var(--m-background);
+	gap: 20px;
+}
+#center > div:not(.subheader, .chess)  {
+	margin: 2.5vmin 0;
+	padding-left: 2.5vmin;
+	padding-bottom: 1vmin;
+}
+#left p {
+    font-size: calc(15px + 0.5vmin);
+	margin-bottom: 0.5vmin;
+	margin-top: 0.5vmin;
+}
+.subheader {
+	margin-top: 0vmin;
+}
+/* =========================
+   LISTS
+========================= */
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style-position: inside;
+	margin: 0.5vmin;
+	padding-left: 1vmin;
+}
+#allPosts, #allThemes {
+	flex-direction: row;
+}
+/* =========================
+   CHESS / BOARD COMPONENT
+========================= */
+.chess,
+.inset {
+	margin: 0;
+	padding: 0;
+}
+
+.chess{
+	border:0px;
+}
+.inset {
+	margin: calc(6.25% + 0.1vmin);
+	overflow: hidden;
+}
+.board,
+.shortboard {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	align-content: stretch;
+	justify-content: center;
+	margin: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+.board {
+	aspect-ratio: 1;
+}
+.shortboard {
+	aspect-ratio: 8;
+}
+/* =========================
+   STEP COMPONENT
+========================= */
+.step_wrapper {
+	display: flex;
+	width: 100%;
+}
+.step_box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 6.25%;
+	font-weight: 300;
+	transition: background 0.2s ease;
+}
+.step_box:hover {
+	background: var(--m-boxcolor);
+}
+.selected {
+	background: var(--m-fontcolor);
+}
+.unselected {
+	background: var(--m-background);
+}
+/* =========================
+   RESPONSIVE
+========================= */
+@media (min-width: 768px) {
+	ul {
+		flex-direction: column;
+	}
+		#left {
+		width: calc(20% - 3.125%);
+	}
+		#center {
+		width: calc(80% - 3.125%);
+	}
+}
+	@media (max-width: 768px) {
+		#left,
+	#center {
+		width: 100%;
+	}
+}
