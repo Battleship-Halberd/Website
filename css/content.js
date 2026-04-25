@@ -20,7 +20,7 @@ const diaryEntries = [
 		<p>HTML, CSS, JS, completed in March 2026. Posts listed in chronological order.</p>
 		<ul id="allPosts"></ul>
 	`},
-	{ title: "Contact Me!", content: `
+	{ title: " ", content: `
 		<p>Don't do that.</p>
 	` },
 	{ title: "All colour schemes.", content: `
