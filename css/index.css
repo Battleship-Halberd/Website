@@ -9,7 +9,7 @@
 body {
 	margin: 0;
 	background: var(--m-background);
-	font-family: "OpenSansCondensed", sans-serif;
+	font-family: "Roboto Condensed", sans-serif;
 	line-height: 1.5;
 	color: var(--m-fontcolor);
 }
@@ -21,27 +21,29 @@ body {
    FONTS
 ========================= */
 @font-face {
-	font-family: "OpenSansCondensed";
-	src: url("OpenSans_SemiCondensed-Regular.woff") format("woff");
+	font-family: "Roboto Condensed";
+	src: url("Roboto_Condensed-Regular.ttf") format("truetype");
+  	font-weight: 400;
 	font-display: swap;
 }
 @font-face {
-	font-family: "OpenSansCondensed";
-	src: url("OpenSans_SemiCondensed-Italic.woff") format("woff");
+	font-family: "Roboto Condensed";
+	src: url("Roboto_Condensed-Italic.ttf") format("truetype");
+  	font-weight: 400;
 	font-style: italic;
 	font-display: swap;
 }
 @font-face {
-	font-family: "OpenSansCondensed";
-	src: url("OpenSans_SemiCondensed-SemiBold.woff") format("woff");
-	font-weight: 700;
+	font-family: "Roboto Condensed";
+	src: url("Roboto_Condensed-Bold.ttf") format("truetype");
+  	font-weight: 700;
 	font-display: swap;
 }
 @font-face {
-	font-family: "OpenSansCondensed";
-	src: url("OpenSans_SemiCondensed-SemiBoldItalic.woff") format("woff");
+	font-family: "Roboto Condensed";
+	src: url("Roboto_Condensed-BoldItalic.ttf") format("truetype");
+  	font-weight: 700;
 	font-style: italic;
-	font-weight: 700;
 	font-display: swap;
 }
 /* =========================
