@@ -59,7 +59,7 @@ const diaryEntries = [
 const themePairs = [
 	{colors:["#e8d6c0","#a1281c","#000000"],names:["Crimson","Repose"],},
 	{colors:["#f2b63f","#9c4012","#540021"],names:["Ochre","Sunrise"],},
-	{colors:["#eed7ac","#8b9525","#2a1f07"],names:["GB","Classic"],},
+	{colors:["#eed7ac","#8b9525","#2a1f07"],names:["Tatami","Galaxy"],},
 	{colors:["#ced9ec","#66b0c7","#34419d"],names:["Bright","Cyan"],},
 	{colors:["#fffff5","#f63090","#210613"],names:["Sangria","Pink"],},
 	{colors:["#87bac5","#816ea0","#502a45"],names:["Cool","Mauve"],},
@@ -92,5 +92,10 @@ const themePairs = [
 	{colors:["#fac748","#8390fa","#1d2f6f"],names:["Summer","Sparkle"],},
 	{colors:["#e7d7c1","#bf4342","#8c1c13"],names:["Cinnamon","'n' Nutmeg"],},
 	{colors:["#e8f1f1","#d0363a","#393215"],names:["Bicycle","Cardsharp"],},
+	{colors:["#e1f0f0","#56aec4","#252b2c"],names:["Ice","Tiger"],},
+	{colors:["#ff3796","#00faac","#302387"],names:["Neon","Headache"],},
+	{colors:["#fff8ed","#e01f3f","#271d2c"],names:["Red","Accent"],},
+	{colors:["#f5e8d1","#dd5639","#0f1b26"],names:["Orange","Portal"],},
+	{colors:["#f5e8d1","#20a5a6","#0f1b26"],names:["Blue","Portal"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx"],names:["",""],},
 ];
