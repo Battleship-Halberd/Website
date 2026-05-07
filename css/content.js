@@ -53,7 +53,15 @@ const diaryEntries = [
 		<p>Turns out, although I didn't know it at the time, it wasn't booting up properly through Secure Boot UEFI bull honkey, but I couldn't figure that out until I paid for a new one and sent off for another 600€ to amazon. And I would've thrown away the old card without much ceremony if I hadn't recieved the new one and discovered it too was completely dead on arrival, which prompted me to fitz around with boot settings until i figured out what was wrong. Oh well. What the hell.</p>
 		<p>So that was a great waste of my time and also my money. I'm gonna spend the rest of april working on my good friend Bloof's game and translating that into spanish. And then it's back to the grind for me. </p>
 	` },
-	// { title: "INSERT_DATE", content: `INSERT CONTENT` },
+	{ title: "07 May, 2026", content: `
+		<p>Settling back down into normality. Spring is finally here, and out on the balcony the flowers are coming into bloom.</p>
+		<p>My friend Squish is doing a game jam. As much as I'd like to join, i've got work that needs to be done and I just don't have the time or space to dedicate to making art, annoyingly. </p>
+	` },
+//	{ title: "07 May, 2026", content: `
+//		<p></p>
+//	` },
+
+
 ];
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
 const themePairs = [
