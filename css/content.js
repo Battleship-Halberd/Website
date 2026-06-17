@@ -106,7 +106,7 @@ const themePairs = [
 	{colors:["#20283d","#426e5d","#e5b083","#fbf7f3",],names:["Terra","Formata"],},
 	{colors:["#3e3a42","#877286","#f0b695","#e9f5da",],names:["Honey","Dewdrop"],},
 	{colors:["#000100","#431723","#46464f","#928e80",],names:["Void","Terminal"],},
-	{colors:["#20a5a6","#0f1b26","#f5e8d1","#dd5639",],names:["Portal","Report"],},
+	{colors:["#0f1b26","#c8472d","#2ec9cb","#f5e8d1",],names:["Portal","Report"],},
 	{colors:["#0d0405","#5e1210","#d35600","#fed018",],names:["Mandarin","Raise"],},
 	{colors:["#564756","#507dba","#5acca0","#e5f7d2",],names:["Echico","Caramel"],},
 	{colors:["#000000","#382843","#7c6d80","#c7c6c6",],names:["Low-spec","Gamer"],},
@@ -134,6 +134,8 @@ const themePairs = [
 	{colors:["#332c50","#46878f","#94e344","#e2f3e4",],names:["Kirokaze","Gameplay"],},
 	{colors:["#381a3e","#8b506d","#f890a8","#f6edc1",],names:["Strawberry","Window"],},
 	{colors:["#2e2622","#77746f","#a09f97","#cccec7",],names:["Weekly","Release"],},
+	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["",""],},
 ]; 
+
 
