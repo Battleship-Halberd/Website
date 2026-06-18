@@ -118,6 +118,7 @@ const themePairs = [
 	{colors:["#1b0326","#7a1c4b","#ba5044","#eff9d6",],names:["Scarlet","Desert"],},
 	{colors:["#405010","#708028","#a0a840","#d0d058",],names:["Retro","Gameplay"],},
 	{colors:["#3b252e","#7f2c44","#5e759c","#d1ada1",],names:["Contrast","Dying"],},
+	{colors:["#2e2622","#77746f","#a09f97","#cccec7",],names:["Weekly","Release"],},
 	{colors:["#221e31","#41485d","#778e98","#c5dbd4",],names:["Unrusted","Screen"],},
 	{colors:["#291f3e","#3b7961","#64d0b8","#f4f2af",],names:["Bubblegum","Grape"],},
 	{colors:["#0c0c0d","#3f3d47","#8b7d73","#cdb27b",],names:["Corto","Americano"],},
@@ -133,7 +134,6 @@ const themePairs = [
 	{colors:["#1c1412","#635650","#d3ae21","#d4c9c3",],names:["Internal","Voltage"],},
 	{colors:["#332c50","#46878f","#94e344","#e2f3e4",],names:["Kirokaze","Gameplay"],},
 	{colors:["#381a3e","#8b506d","#f890a8","#f6edc1",],names:["Strawberry","Window"],},
-	{colors:["#2e2622","#77746f","#a09f97","#cccec7",],names:["Weekly","Release"],},
 	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["",""],},
 ]; 
