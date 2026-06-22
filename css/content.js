@@ -8,6 +8,8 @@ const diaryEntries = [
 	{title: "My recent projects.", content: `
 		<h4><a href="https://battleship-halbird.itch.io/wallpaper-bundle-and-collection">Wallpaper Bundle and Collection</a>.</h4>
 		<p>Python, completed in September of 2025.</p>
+		<h4><a href="https://bsky.app/profile/2colourwallpapers.bsky.social">2-colour Wallpaper Bot</a>.</h4>
+		<p>Python, completed in Jule of 2026.</p>
 		<h4><a href="https://backloggd.com/u/Chef_Bloof">Backloggd journaling and review</a>.</h4>
 		<p>Creative writing, started in December 2025.</p>
 		<p>I did a few sporadic reviews on backlogg'd recently, as part of what I'd laughably
@@ -57,9 +59,16 @@ const diaryEntries = [
 		<p>Settling back down into normality. Spring is finally here, and out on the balcony the flowers are coming into bloom.</p>
 		<p>My friend Squish is doing a game jam. As much as I'd like to join, i've got work that needs to be done and I just don't have the time or space to dedicate to making art, annoyingly. </p>
 	` },
+	{ title: "23 June, 2026", content: `
+		<p>Good news! I'm not, in fact, dead!</p>
+		<p>Man, is that some good news or what. I'm so glad to be alive and aware of the world around me. I love being here and now in this moment!</p>
+		<p></p>
+		<p>So! I added a new project to the list. A bot on Bluesky that takes my homemade <a href="https://battleship-halbird.itch.io/wallpaper-bundle-and-collection">artesanal wallpapers</a> and posts them one per hour. Took a little dithering, rigging, jiggering and poking but I got it running on my computer's crontab. I'm very happy with it as a fun thing to do and have done!</p>
+	` },
 //	{ title: "07 May, 2026", content: `
 //		<p></p>
 //	` },
+
 
 
 ];
