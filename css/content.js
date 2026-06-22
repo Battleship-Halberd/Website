@@ -117,7 +117,7 @@ const themePairs = [
 	{colors:["#181322","#4b372c","#a2423a","#cdc1a7",],names:["Maid","Orleans"],},
 	{colors:["#674577","#64b9ca","#ffa3d6","#ffebe5",],names:["Popular","Star"],},
 	{colors:["#131726","#59608e","#61b8ae","#dde0bd",],names:["Zero-Sum","One"],},
-	{colors:["#daf3ec","#00bff3","#ed008c","#260016",],names:["Aspire","Ascent"],},
+	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Aspire","Ascent"],},
 	{colors:["#351522","#943054","#db7bae","#f5a1a1",],names:["Foosball","Head"],},
 	{colors:["#32312d","#5d5b54","#8d8a7f","#c2beae",],names:["Silver","Dollar"],},
 	{colors:["#322623","#7b505c","#9b9880","#e4d6cf",],names:["Green","Machine"],},
