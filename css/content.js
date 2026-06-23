@@ -59,10 +59,10 @@ const diaryEntries = [
 		<p>Settling back down into normality. Spring is finally here, and out on the balcony the flowers are coming into bloom.</p>
 		<p>My friend Squish is doing a game jam. As much as I'd like to join, i've got work that needs to be done and I just don't have the time or space to dedicate to making art, annoyingly. </p>
 	` },
-	{ title: "23 June, 2026", content: `
+	{ title: "23 Jun, 2026", content: `
 		<p>Good news! I'm not, in fact, dead!</p>
 		<p>Man, is that some good news or what. I'm so glad to be alive and aware of the world around me. I love being here and now in this moment!</p>
-		<p> </p>
+		
 		<p>So! I added a new project to the list. A bot on Bluesky that takes my homemade <a href="https://battleship-halbird.itch.io/wallpaper-bundle-and-collection">Artesanal Wallpapers</a> and posts them one per hour. Took a little dithering, rigging, jiggering and poking but I got it running on my computer's crontab. I'm very happy with it as a fun thing to do and have done!</p>
 		<p>Woo!</p>
 	` },
@@ -74,8 +74,8 @@ const diaryEntries = [
 
 ];
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
-const themePairs = [
-	{colors:["#151640","#3f6d9e","#f783b0","#e6f2ef",],names:["Mask","Fame"],},
+const themePairs = [ 
+	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Play","Clay"],},
 	{colors:["#40332f","#856d52","#95c798","#fbffe0",],names:["Choco","Mint"],},
 	{colors:["#002b59","#005f8c","#00b9be","#9ff4e5",],names:["Black","Aqua"],},
 	{colors:["#00002a","#0001d5","#ff17ca","#fff6fd",],names:["Neon","Blink"],},
@@ -88,14 +88,15 @@ const themePairs = [
 	{colors:["#050505","#4c5671","#91a3aa","#f5f5f5",],names:["Drabbed","Up"],},
 	{colors:["#0d1a1a","#5b8c7c","#add9bc","#f2fff2",],names:["Matrix","Mint"],},
 	{colors:["#471e4c","#876bb2","#f7b58c","#ffefff",],names:["Super","Catch"],},
-	{colors:["#0f052d","#ff7777","#ffce96","#f1f2da",],names:["Alien","Brain"],},
-	{colors:["#622e4c","#7550e8","#608fcf","#8be5ff",],names:["Heart","Dream"],},
+	{colors:["#0f052d","#ff7777","#ffce96","#f1f2da",],names:["Peach","Melba"],},
 	{colors:["#2d1b00","#1e606e","#5ab9a8","#c4f0c2",],names:["Haze","Todays"],},
 	{colors:["#68518a","#7c9aac","#f4949c","#ffd0a4",],names:["Staid","Coral"],},
 	{colors:["#1f285d","#4b849a","#98d8b1","#ecf2cb",],names:["Dream","Snowy"],},
 	{colors:["#266b90","#9b63bf","#e477b6","#fff3f3",],names:["Mesa","Meseta"],},
 	{colors:["#250442","#dd0956","#9c1904","#f5b413",],names:["Fruit","Punch"],},
 	{colors:["#4722fe","#32383e","#72797e","#b4b8be",],names:["Blue","Accent"],},
+	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Acidic","Jack"],},
+	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
 	{colors:["#22ff47","#32383e","#72797e","#b4b8be",],names:["Green","Accent"],},
 	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Zebra","Asylum"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
@@ -106,7 +107,7 @@ const themePairs = [
 	{colors:["#0f1327","#484267","#9a7ca7","#e5dac2",],names:["Lunar","Ascent"],},
 	{colors:["#2176cc","#ff7d6e","#fca6ac","#e8e7cb",],names:["Soda","Poppins"],},
 	{colors:["#2c2137","#764462","#a96868","#edb4a1",],names:["Rustic","Sepia"],},
-	{colors:["#1a2129","#312137","#512839","#713141",],names:["Fiery","Plague"],},
+	{colors:["#1a2129","#312137","#512839","#713141",],names:["Ember","Plague"],},
 	{colors:["#46425e","#5b768d","#d17c7c","#f6c6a8",],names:["Frigid","Flame"],},
 	{colors:["#012824","#265935","#ff4d6d","#fcdeea",],names:["Cherry","Melon"],},
 	{colors:["#fffdaf","#ff3796","#00faac","#302387",],names:["Fuzzy","Iconic"],},
@@ -116,8 +117,9 @@ const themePairs = [
 	{colors:["#220780","#615fed","#ffba5a","#fffab2",],names:["Cosmic","Cream"],},
 	{colors:["#00303b","#4e494c","#d4984a","#ffffc7",],names:["Slurry","Juice"],},
 	{colors:["#181322","#4b372c","#a2423a","#cdc1a7",],names:["Maid","Orleans"],},
-	{colors:["#674577","#64b9ca","#ffa3d6","#ffebe5",],names:["Popular","Star"],},
 	{colors:["#131726","#59608e","#61b8ae","#dde0bd",],names:["Zero-Sum","One"],},
+	{colors:["#151640","#3f6d9e","#f783b0","#e6f2ef",],names:["Popular","Star"],},
+	{colors:["#381631","#5eb6ad","#d8dcb4","#fea85f",],names:["Faded","Super-8"],},
 	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Aspire","Ascent"],},
 	{colors:["#351522","#943054","#db7bae","#f5a1a1",],names:["Foosball","Head"],},
 	{colors:["#32312d","#5d5b54","#8d8a7f","#c2beae",],names:["Silver","Dollar"],},
@@ -140,14 +142,13 @@ const themePairs = [
 	{colors:["#2c1e74","#c23a73","#d58863","#dad3af",],names:["Descent","Temper"],},
 	{colors:["#210b1b","#4d222c","#9d654c","#cfab51",],names:["Golden","Platter"],},
 	{colors:["#292b31","#483d47","#5d5549","#837e7c",],names:["Heather","Meadow"],},
-	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Basement","Jacks"],},
 	{colors:["#1b0326","#7a1c4b","#ba5044","#eff9d6",],names:["Scarlet","Desert"],},
 	{colors:["#405010","#708028","#a0a840","#d0d058",],names:["Retro","Gameplay"],},
 	{colors:["#2e2622","#77746f","#a09f97","#cccec7",],names:["Weekly","Release"],},
 	{colors:["#000000","#ff5555","#55ff55","#ffff55",],names:["Daltonic","Combo"],},
 	{colors:["#181b24","#0c5066","#d99741","#f0e1d1",],names:["Moderna","Italic"],},
 	{colors:["#27393f","#6f535b","#649092","#cfc89d",],names:["Viscount","Myriad"],},
-	{colors:["#5d446c","#739ca1","#f7b58c","#fff2e5",],names:["Piebald","Pumpkin"],},
+	{colors:["#5d446c","#739ca1","#f7b58c","#fff2e5",],names:["Celeste","Pumpkin"],},
 	{colors:["#000000","#550000","#a40000","#ef0000",],names:["Everpresent","Lip"],},
 	{colors:["#221e31","#41485d","#778e98","#c5dbd4",],names:["Unrusted","Screen"],},
 	{colors:["#291f3e","#3b7961","#64d0b8","#f4f2af",],names:["Bubblegum","Grape"],},
@@ -158,6 +159,8 @@ const themePairs = [
 	{colors:["#131626","#4d4d80","#e6a1cf","#ffe6ea",],names:["Nightly","Fuzzies"],},
 	{colors:["#3b252e","#593a5f","#4d7d65","#d1ada1",],names:["Forgotten","Swamp"],},
 	{colors:["#26153a","#843c35","#398a75","#ffeb94",],names:["Bogwater","Tarpit"],},
+	{colors:["#381631","#105390","#fea85f","#d8dcb4",],names:["Assisted","Orange"],},
+	{colors:["#622e4c","#7550e8","#608fcf","#8be5ff",],names:["Bloodpump","Ocean"],},
 	{colors:["#5c007e","#fe6ecd","#48cedf","#e5e695",],names:["Dayglow","Eighties"],},
 	{colors:["#141852","#9e2e9d","#e779a0","#dac4b9",],names:["Lavander","Bulrush"],},
 	{colors:["#1b1829","#3f7a63","#f4a374","#fffbd1",],names:["Copper","Shoeshine"],},
@@ -173,5 +176,6 @@ const themePairs = [
 	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Equality","Inclusion"],},
 	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	{colors:["#151515","#1880f8","#ff82ce","#ffe737",],names:["Classic","Impression"],},
-	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["",""],},
+	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
+	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 ];

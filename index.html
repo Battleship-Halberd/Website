@@ -5,23 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/x-icon" href="css/favicon.ico">
 		<style>
+			:root {--m-a: #000000; --m-b: #443344;--m-c: #889988;--m-d: #fefefe;}
 
-			:root {
-				--m-a: #000000;
-				--m-b: #443344;
-				--m-c: #889988;
-				--m-d: #fefefe;
-			}
-
-			/* =========================
-			   RESET / BASE
-			========================= */
-
-			*,
-			*::before,
-			*::after {
-				box-sizing: border-box;
-			}
+			*,*::before,*::after {box-sizing: border-box;}
 
 			body {
 				margin: 0;
@@ -31,25 +17,18 @@
 				color: var(--m-a);
 			}
 
-			::selection {
-				background: var(--m-b);
-				color: var(--m-d);
-			}
-
-			/* =========================
-			   FONTS
-			========================= */
+			::selection { background: var(--m-b); color: var(--m-d);}
 
 			@font-face {
 				font-family: "Roboto Condensed";
-				src: url("Roboto_Condensed-Regular.woff2") format("woff2");
+				src: url("css/Roboto_Condensed-Regular.woff2") format("woff2");
 				font-weight: 400;
 				font-display: swap;
 			}
 
 			@font-face {
 				font-family: "Roboto Condensed";
-				src: url("Roboto_Condensed-Italic.woff2") format("woff2");
+				src: url("css/Roboto_Condensed-Italic.woff2") format("woff2");
 				font-weight: 400;
 				font-style: italic;
 				font-display: swap;
@@ -57,117 +36,64 @@
 
 			@font-face {
 				font-family: "Roboto Condensed";
-				src: url("Roboto_Condensed-Bold.woff2") format("woff2");
+				src: url("css/Roboto_Condensed-Bold.woff2") format("woff2");
 				font-weight: 700;
 				font-display: swap;
 			}
 
 			@font-face {
 				font-family: "Roboto Condensed";
-				src: url("Roboto_Condensed-BoldItalic.woff2") format("woff2");
+				src: url("css/Roboto_Condensed-BoldItalic.woff2") format("woff2");
 				font-weight: 700;
 				font-style: italic;
 				font-display: swap;
 			}
 
-			/* =========================
-			   TYPOGRAPHY
-			========================= */
+			header,	h1,	h2,	h3 {text-align: center;	}
+			h1 {font-size: calc(36px + 3vmin); margin: 0; }
+			h2 {font-size: calc(28px + 2vmin); margin: 0; }
+			h3 {font-size: calc(20px + 1.5vmin); margin: 0; }
+			h4 {font-size: calc(16px + 1.5vmin); margin: 0; }
+			h5 {font-size: calc(12px + 1.25vmin); margin: 0; }
+			p {	font-size: calc(12px + 1vmin); margin: 0 0 1.5vmin; padding-inline: 2vmin; }
+			li {font-size: calc(15px + 0.5vmin); margin-inline: 0.5vmin;}
+			strong, #bold {	font-weight: 700; }
+			a { color: var(--m-b); text-decoration: none;}
+			a:hover, a:hover * { color: var(--m-a); }
 
-			header,
-			h1,
-			h2,
-			h3 {
-				text-align: center;
-			}
+			main {display: flex; justify-content: space-evenly; width: 100%; padding-block: 3px; }
 
-			h1 {
-				font-size: calc(36px + 3vmin);
-				margin: 0;
-			}
-
-			h2 {
-				font-size: calc(28px + 2vmin);
-				margin: 0;
-			}
-
-			h3 {
-				font-size: calc(20px + 1.5vmin);
-				margin: 0;
-			}
-
-			h4 {
-				font-size: calc(16px + 1.5vmin);
-				margin: 0;
-			}
-
-			h5 {
-				font-size: calc(12px + 1.25vmin);
-				margin: 0;
-			}
-
-			p {
-				font-size: calc(12px + 1vmin);
-				margin: 0 0 1.5vmin;
-				padding-inline: 2vmin;
-			}
-
-			li {
-				font-size: calc(15px + 0.5vmin);
-				margin-inline: 0.5vmin;
-			}
-
-			strong,
-			#bold {
-				font-weight: 700;
-			}
-
-			/* =========================
-			   LINKS
-			========================= */
-
-			a {
-				color: var(--m-b);
-				text-decoration: none;
-			}
-
-			a:hover,
-			a:hover * {
-				color: var(--m-a);
-			}
-
-			/* =========================
-			   LAYOUT
-			========================= */
-
-			main {
-				display: flex;
-				justify-content: space-evenly;
-				width: 100%;
-				padding-block: 3px;
-			}
-
-			.flexContainer {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: space-evenly;
-				width: 100%;
+			.gridContainer {
+				display: grid;
+				grid-template-columns: 20% 80%;
+				grid-template-areas:
+					"topbar topbar"
+					"left center";
+				gap: calc(20px + 1.5vmin);
+				width: calc(100% - 2 * (15px + 0.5vmin));
+				padding-right: calc(15px + 0.5vmin);
 			}
 
 			#topbar {
+				grid-area: topbar;
 				display: flex;
 				align-items: center;
 				justify-content: space-evenly;
-				margin: 2.5vmin 20px;
-				padding: 1vmin;
 				background: var(--m-c);
 				font-size: calc(20px + 1.5vmin);
+				border: 0.1vmin solid var(--m-b);
+				border-right: 1.0vmin solid var(--m-b);
+				border-left: 1.0vmin solid var(--m-b);
 			}
+			
+			#left {grid-area: left;}
 
+			#center { grid-area: center; }
+			
 			main > div > div > div {
 				border: 0.1vmin solid var(--m-b);
 				background: var(--m-c);
-				gap: 20px;
+				gap: calc(20px + 1.5vmin);
 			}
 			#center > div:not(.subheader, .chess) {
 				margin: 2.5vmin 0;
@@ -180,19 +106,12 @@
 				border-right: 1.0vmin solid var(--m-b);
 			}
 
-
 			#left p {
 				font-size: calc(15px + 0.5vmin);
 				margin: 0.5vmin 0;
 			}
 
-			.subheader {
-				margin-top: 0;
-			}
-
-			/* =========================
-			   LISTS
-			========================= */
+			.subheader {margin-top: 0;}
 
 			ul {
 				display: flex;
@@ -202,23 +121,10 @@
 				padding-left: 1vmin;
 			}
 
-			#allPosts,
-			#allThemes {
-				flex-direction: row;
-			}
+			#allPosts, #allThemes {	flex-direction: row;}
+			.chess, .inset {margin: 0; padding: 0;}
 
-			/* =========================
-			   CHESS / BOARD COMPONENT
-			========================= */
-
-			.chess,
-			.inset {
-				margin: 0;
-				padding: 0;
-			}
-
-			.chess {
-			}
+			.chess {}
 
 			.inset {
 				margin: calc(6.25% + 0.1vmin);
@@ -227,8 +133,7 @@
 				border: 0.1vmin solid var(--m-b);
 			}
 
-			.board,
-			.shortboard {
+			.board, .shortboard {
 				display: flex;
 				flex-wrap: wrap;
 				align-items: stretch;
@@ -239,17 +144,9 @@
 				max-height: 100%;
 			}
 
-			.board {
-				aspect-ratio: 1;
-			}
+			.board {aspect-ratio: 1; }
 
-			.shortboard {
-				aspect-ratio: 8;
-			}
-
-			/* =========================
-			   STEP / BOARD CELLS
-			========================= */
+			.shortboard {aspect-ratio: 8; }
 
 			.step_wrapper {
 				display: flex;
@@ -280,64 +177,46 @@
 				background: var(--m-b);
 			}
 
-			/* =========================
-			   SPECIAL UI BLOCKS
-			========================= */
-
-			#topbar,
 			.inset,
 			main > div > div > div {
 				background: var(--m-c);
 				border: 0.1vmin solid var(--m-b);
 			}
 
-			/* =========================
-			   TYPOGRAPHY CONTAINERS
-			========================= */
-
-			header,
-			h1,
-			h2,
-			h3 {
-				text-align: center;
-			}
-
-			/* =========================
-			   RESPONSIVE
-			========================= */
-
-			@media (min-width: 768px) {
-				ul {
-					flex-direction: column;
-				}
-				#left {
-					width: calc(20% - 3.125%);
-				}
-				#center {
-					width: calc(80% - 3.125%);
-				}
-			}
 			@media (max-width: 768px) {
+				.gridContainer {
+					grid-template-columns: 100% ;
+					grid-template-areas:
+						"topbar"
+						"left"
+						"center";
+					gap:0px;
+					width: 100%;
+					padding-right: 0px;
+				}
+
 				#left,
 				#center {
-					width: 100%;
+					margin: 1vmin 20px;
 				}
 			}
+
+
 		</style>
 		<title>Craiture's Blog</title>
 		<script src="css/content.js"></script>
 	</head>
 	<body>
 		<header>
-			<h1>Hey Squish!</h1>
+			<h1>Hey Funboy!</h1>
 		</header>
-		<div id="topbar">
-			<h3><a href="#entry0">Home</a></h3>
-			<h3><a href="#entry1">Archive</a></h3>
-			<h3><a href="#entry2">Contact Me!</a></h3>
-		</div>
 		<main>
-			<div class="flexContainer">
+			<div class="gridContainer">
+				<div id="topbar">
+					<h3><a href="#entry0">Home</a></h3>
+					<h3><a href="#entry1">Archive</a></h3>
+					<h3><a href="#entry2">Contact Me!</a></h3>
+				</div>
 				<div id="left">
 					<div class="chess">
 						<section class="board"></section>
@@ -375,7 +254,7 @@
 						<h5>Boring Legal Stuff</h5>
 						<ul>
 							<li>Website made by Craiture deLelioaha.</li>
-							<li>Site last updated on March 6th, 2026</li>
+							<li>Site last updated on 23 June, 2026</li>
 						</ul>
 					</div>
 				</div>
