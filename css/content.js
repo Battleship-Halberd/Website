@@ -72,11 +72,11 @@ const diaryEntries = [
 		<p>I feel like it's important to remind myself that this game will not reinvent the wheel. It will not generate me a million dollars or free me from my obligations, that this is something I am doing because I like it and it's fun for me.</p>
 		<p>I'm making a videogame!</p>
 		<p>And more then that, I'm making a big advanced project. More then a simple bot that produces wallpapers on demand, what i'm making is a grand undertaking that will most likely rest in my programming folder on this computer for a good long while as I keep adding layers to it, fleshing out its various systems and adding meat onto its bones.</p>
-		<p>And that's okay.</p>
+		<h4>And that's okay.</h4>
 		<p>I find motivation a tricky and challenging thing. If I think something is worth doing, I want it done more then I want to be within the process of doing it. I like seeing a puzzle solved more then I like solving a puzzle, and solving puzzles for the sake of solving puzzles is something I feel like I have to learn.</p>
 		<p>I'm making a grid-based RPG.</p>
 		<p>I want to make the kind of game that would play in a terminal window on linux in a year beginning with 19, of the kind they don't make anymore because even the style and presentation have become as outdated as text adventures, point-and-click games, and platformers.</p>
-		<p>I'm currently calling it Murderhoboes.</p>
+		<h4>I'm currently calling it Murderhoboes.</h4>
 		<p>And beyond a couple of super pie-in-the-sky ideas about what it might be and how its story might roll out (Man, isn't Pokemon Mystery Dungeon fun?) or brief fleeting thoughts about presentation (Let's make it extremely south american, like having pan pipe and guitar-driven music or making all the UI flourishes look like the side of a buenos aires taxicab) I'm very consciously avoiding talking about the story right now. Or naming all these characters.</p>
 		<p>Right now, I want a working, playable engine that looks like ass before I even dare to think about what the game might look like.</p>
 		<p>And so far, i've got some good stuff going on! Here's a super messy features list I got figured out.</p>
@@ -102,6 +102,9 @@ const diaryEntries = [
 ];
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
 const themePairs = [ 
+
+	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Aqua","Lilypad"],},
+	
 	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Play","Clay"],},
 	{colors:["#40332f","#856d52","#95c798","#fbffe0",],names:["Choco","Mint"],},
 	{colors:["#002b59","#005f8c","#00b9be","#9ff4e5",],names:["Black","Aqua"],},
@@ -125,7 +128,6 @@ const themePairs = [
 	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Acidic","Jack"],},
 	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
 	{colors:["#22ff47","#32383e","#72797e","#b4b8be",],names:["Green","Accent"],},
-	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Zebra","Asylum"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
 	{colors:["#1e014b","#78478e","#58e1c3","#ffdaff",],names:["Dossier","Glow"],},
 	{colors:["#211e20","#555568","#a0a08b","#e9efec",],names:["Demi","Chrome "],},
