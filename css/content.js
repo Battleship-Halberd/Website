@@ -66,6 +66,33 @@ const diaryEntries = [
 		<p>So! I added a new project to the list. A bot on Bluesky that takes my homemade <a href="https://battleship-halbird.itch.io/wallpaper-bundle-and-collection">Artesanal Wallpapers</a> and posts them one per hour. Took a little dithering, rigging, jiggering and poking but I got it running on my computer's crontab. I'm very happy with it as a fun thing to do and have done!</p>
 		<p>Woo!</p>
 	` },
+	{ title: "07 Jul, 2026", content: `
+		<h4>Murderhoboes - Dev Diary Entry 1.</h4>
+		<p>I'm having fun :)</p>
+		<p>I feel like it's important to remind myself that this game will not reinvent the wheel. It will not generate me a million dollars or free me from my obligations, that this is something I am doing because I like it and it's fun for me.</p>
+		<p>I'm making a videogame!</p>
+		<p>And more then that, I'm making a big advanced project. More then a simple bot that produces wallpapers on demand, what i'm making is a grand undertaking that will most likely rest in my programming folder on this computer for a good long while as I keep adding layers to it, fleshing out its various systems and adding meat onto its bones.</p>
+		<p>And that's okay.</p>
+		<p>I find motivation a tricky and challenging thing. If I think something is worth doing, I want it done more then I want to be within the process of doing it. I like seeing a puzzle solved more then I like solving a puzzle, and solving puzzles for the sake of solving puzzles is something I feel like I have to learn.</p>
+		<p>I'm making a grid-based RPG.</p>
+		<p>I want to make the kind of game that would play in a terminal window on linux in a year beginning with 19, of the kind they don't make anymore because even the style and presentation have become as outdated as text adventures, point-and-click games, and platformers.</p>
+		<p>I'm currently calling it Murderhoboes.</p>
+		<p>And beyond a couple of super pie-in-the-sky ideas about what it might be and how its story might roll out (Man, isn't Pokemon Mystery Dungeon fun?) or brief fleeting thoughts about presentation (Let's make it extremely south american, like having pan pipe and guitar-driven music or making all the UI flourishes look like the side of a buenos aires taxicab) I'm very consciously avoiding talking about the story right now. Or naming all these characters.</p>
+		<p>Right now, I want a working, playable engine that looks like ass before I even dare to think about what the game might look like.</p>
+		<p>And so far, i've got some good stuff going on! Here's a super messy features list I got figured out.</p>
+		<ul>
+			<li>An Grid of gameplay elements</li>
+			<li>Moving with WASD or arrow keys.</li>
+			<li>Multiple player characters</li>
+			<li>Being able to press Q and E to switch between them.</li>
+			<li>A turn system where your guys move and then the enemy's guys move.</li>
+			<li>A randomized dungeon of rooms, a spawn point, and a staircase that takes guys off the map</li>
+			<li>A sidebar window showing the turn count, the currently selected player and their stats.</li>
+			<li>A way to make every player have a Movement stat that counts down and when their turn is up, they can't move anymore.</li>
+		</ul> 
+		<p>And yet, even here, working with concepts and ideas with a system like this really does feel like working with quick-drying cement. Like the video essays said, you really do get attached to ideas and concepts that you put down and don't think about. In my case, I made up some stats to play around with, and the one stat that matters was Speed. So I made a mage called Mage with 5 movement per turn, a Rogue called Rogue with 8, and a knight called Knight with 4 movement every turn. And already, just from the manner I've moved all these pieces around the imaginary board has already begun to imbue them with character. I'm already feeling how the rogue moves quick and serves as an advance scout, and so needs to be bad in combat to make up for it. Perhaps some kind of monk build without ranged weapons that the Knight and Mage can make up for with arrows and spells.</p>
+		<p>So next step forward is to add the combat system and make these individual HP bars start to mean something. Add a super rudimentary enemy and start messing around with combat numbers until I get something reasonably satisfying with the systems I have.</p> 
+	` },
 //	{ title: "07 May, 2026", content: `
 //		<p></p>
 //	` },
