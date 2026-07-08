@@ -102,9 +102,6 @@ const diaryEntries = [
 ];
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
 const themePairs = [ 
-
-	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Aqua","Lilypad"],},
-	
 	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Play","Clay"],},
 	{colors:["#40332f","#856d52","#95c798","#fbffe0",],names:["Choco","Mint"],},
 	{colors:["#002b59","#005f8c","#00b9be","#9ff4e5",],names:["Black","Aqua"],},
@@ -128,6 +125,7 @@ const themePairs = [
 	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Acidic","Jack"],},
 	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
 	{colors:["#22ff47","#32383e","#72797e","#b4b8be",],names:["Green","Accent"],},
+	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Aqua","Asylum"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
 	{colors:["#1e014b","#78478e","#58e1c3","#ffdaff",],names:["Dossier","Glow"],},
 	{colors:["#211e20","#555568","#a0a08b","#e9efec",],names:["Demi","Chrome "],},
