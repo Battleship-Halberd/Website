@@ -202,7 +202,6 @@ const themePairs = [
 	{colors:["#1e1d39","#402751","#c65197","#df84a5",],names:["Aphrodite","Venus"],},
 	{colors:["#381631","#105390","#fea85f","#d8dcb4",],names:["Tangerine","Assist"],},
 	{colors:["#341c27","#253a5e","#de9e41","#a4dddb",],names:["Aperture","Science"],},
-	{colors:["#341c27","#253a5e","#de9e41","#a4dddb",],names:["Aperture","Science"],},
 	{colors:["#5c007e","#fe6ecd","#48cedf","#e5e695",],names:["Dayglow","Eighties"],},
 	{colors:["#141852","#9e2e9d","#e779a0","#dac4b9",],names:["Lavander","Bulrush"],},
 	{colors:["#1b1829","#3f7a63","#f4a374","#fffbd1",],names:["Copper","Shoeshine"],},
