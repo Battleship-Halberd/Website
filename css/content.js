@@ -97,9 +97,8 @@ const diaryEntries = [
 //		<p></p>
 //	` },
 
-
-
 ];
+
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
 const themePairs = [ 
 	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Play","Clay"],},
