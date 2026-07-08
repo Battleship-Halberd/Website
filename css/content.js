@@ -125,6 +125,7 @@ const themePairs = [
 	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Acidic","Jack"],},
 	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Aqua","Asylum"],},
 	{colors:["#000000","#433455","#9d9f7f","#c5ccb8",],names:["Faded","Greys"],},
+	{colors:["#183f39","#2a1d0d","#3c9f9c","#efd8a1",],names:["Deep","Bruise"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
 	{colors:["#1e014b","#78478e","#58e1c3","#ffdaff",],names:["Dossier","Glow"],},
 	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
@@ -161,6 +162,8 @@ const themePairs = [
 	{colors:["#000100","#431723","#46464f","#928e80",],names:["Void","Terminal"],},
 	{colors:["#0f1b26","#c8472d","#2ec9cb","#f5e8d1",],names:["Portal","Report"],},
 	{colors:["#37313c","#f63090","#4cc9f4","#e1f0f0",],names:["Colossal","Glow"],},
+	{colors:["#183f39","#300f0a","#ef692f","#efd8a1",],names:["Rugger","Maroon"],},
+	{colors:["#2b2821","#b03a48","#d4804d","#e3cfb4",],names:["Peaches","Gravy"],},
 	{colors:["#000000","#1d2b53","#ff004d","#fff1e8",],names:["Intonation","Way"],},
 	{colors:["#0d0405","#5e1210","#d35600","#fed018",],names:["Mandarin","Raise"],},
 	{colors:["#2e2b12","#da298e","#fac6b4","#f8f3fd",],names:["Paramour","Flame"],},
@@ -188,7 +191,9 @@ const themePairs = [
 	{colors:["#3b252e","#593a5f","#4d7d65","#d1ada1",],names:["Forgotten","Swamp"],},
 	{colors:["#26153a","#843c35","#398a75","#ffeb94",],names:["Bogwater","Tarpit"],},
 	{colors:["#381631","#105390","#fea85f","#d8dcb4",],names:["Assisted","Orange"],},
+	{colors:["#393457","#6a3771","#1e8875","#6df7c1",],names:["Creation","Poison"],},
 	{colors:["#622e4c","#7550e8","#608fcf","#8be5ff",],names:["Bloodpump","Ocean"],},
+	{colors:["#433455","#666092","#9d9f7f","#a593a5",],names:["Mouldy","Sandwich"],},
 	{colors:["#5c007e","#fe6ecd","#48cedf","#e5e695",],names:["Dayglow","Eighties"],},
 	{colors:["#141852","#9e2e9d","#e779a0","#dac4b9",],names:["Lavander","Bulrush"],},
 	{colors:["#1b1829","#3f7a63","#f4a374","#fffbd1",],names:["Copper","Shoeshine"],},
@@ -205,17 +210,14 @@ const themePairs = [
 	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Equality","Inclusion"],},
 	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	{colors:["#151515","#1880f8","#ff82ce","#ffe737",],names:["Classic","Impression"],},
-	{colors:["#433455","#666092","#9d9f7f","#a593a5",],names:["Mouldy","Sandwich"],},
-	{colors:["#183f39","#300f0a","#ef692f","#efd8a1",],names:["Rugger","Maroon"],},
-	{colors:["#183f39","#2a1d0d","#3c9f9c","#efd8a1",],names:["Deep","Bruise"],},
 	{colors:["#1f240a","#39571c","#ef692f","#efb775",],names:["Christmas","Pinewood"],},
-	{colors:["#2b2821","#b03a48","#d4804d","#e3cfb4",],names:["Peaches","Gravy"],},
+	{colors:["#28192f","#5f5f6e","#f8401b","#cecac9",],names:["xxx","xxx"],},
+	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
+	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 ];
-
-
 
 
 
