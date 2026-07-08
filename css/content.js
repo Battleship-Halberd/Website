@@ -123,11 +123,12 @@ const themePairs = [
 	{colors:["#250442","#dd0956","#9c1904","#f5b413",],names:["Fruit","Punch"],},
 	{colors:["#4722fe","#32383e","#72797e","#b4b8be",],names:["Blue","Accent"],},
 	{colors:["#222323","#ff4adc","#3dff98","#f0f6f0",],names:["Acidic","Jack"],},
-	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
-	{colors:["#22ff47","#32383e","#72797e","#b4b8be",],names:["Green","Accent"],},
 	{colors:["#001b2e","#2d757e","#9a7bbc","#eefded",],names:["Aqua","Asylum"],},
+	{colors:["#000000","#433455","#9d9f7f","#c5ccb8",],names:["Faded","Greys"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
 	{colors:["#1e014b","#78478e","#58e1c3","#ffdaff",],names:["Dossier","Glow"],},
+	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
+	{colors:["#22ff47","#32383e","#72797e","#b4b8be",],names:["Green","Accent"],},
 	{colors:["#211e20","#555568","#a0a08b","#e9efec",],names:["Demi","Chrome "],},
 	{colors:["#7c3f58","#eb6b6f","#f9a875","#fff6d3",],names:["Cream","Sundae"],},
 	{colors:["#051f39","#4a2480","#c53a9d","#ff8e80",],names:["Romulan","Lava"],},
@@ -197,12 +198,27 @@ const themePairs = [
 	{colors:["#300030","#602878","#f89020","#f8f088",],names:["Hallowed","Pumpkin"],},
 	{colors:["#2d162c","#412752","#683a68","#9775a6",],names:["Velveteen","Cherry"],},
 	{colors:["#1c1412","#635650","#d3ae21","#d4c9c3",],names:["Internal","Voltage"],},
+	{colors:["#0d2b45","#544e68","#d08159","#ffd4a3",],names:["Waterfall","Splash"],},
 	{colors:["#332c50","#46878f","#94e344","#e2f3e4",],names:["Kirokaze","Gameplay"],},
 	{colors:["#381a3e","#8b506d","#f890a8","#f6edc1",],names:["Strawberry","Window"],},
 	{colors:["#5a3921","#6b8c42","#7bc67b","#ffffb5",],names:["Verdant","Awakening"],},
 	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Equality","Inclusion"],},
 	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	{colors:["#151515","#1880f8","#ff82ce","#ffe737",],names:["Classic","Impression"],},
+	{colors:["#433455","#666092","#9d9f7f","#a593a5",],names:["Mouldy","Sandwich"],},
+	{colors:["#183f39","#300f0a","#ef692f","#efd8a1",],names:["Rugger","Maroon"],},
+	{colors:["#183f39","#2a1d0d","#3c9f9c","#efd8a1",],names:["Deep","Bruise"],},
+	{colors:["#1f240a","#39571c","#ef692f","#efb775",],names:["Christmas","Pinewood"],},
+	{colors:["#2b2821","#b03a48","#d4804d","#e3cfb4",],names:["Peaches","Gravy"],},
+	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 	//{colors:["#xxxxxx","#xxxxxx","#xxxxxx","#xxxxxx",],names:["xxx","xxx"],},
 ];
+
+
+
+
+
+
+
+
