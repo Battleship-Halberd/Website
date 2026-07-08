@@ -126,7 +126,6 @@ const themePairs = [
 	{colors:["#000000","#433455","#9d9f7f","#c5ccb8",],names:["Faded","Greys"],},
 	{colors:["#183f39","#2a1d0d","#3c9f9c","#efd8a1",],names:["Deep","Bruise"],},
 	{colors:["#151d28","#394a50","#819796","#c7cfcc",],names:["Boring","Grey"],},
-	{colors:["#172038","#253a5e","#402751","#a4dddb",],names:["Jupiter","Zeus"],},
 	{colors:["#0f052d","#203671","#36868f","#5fc75d",],names:["Moonlight","GB"],},
 	{colors:["#1e014b","#78478e","#58e1c3","#ffdaff",],names:["Dossier","Glow"],},
 	{colors:["#000871","#8854f3","#ff8c5c","#fff982",],names:["Yawning","Tide"],},
