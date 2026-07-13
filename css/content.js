@@ -93,6 +93,17 @@ const diaryEntries = [
 		<p>And yet, even here, working with concepts and ideas with a system like this really does feel like working with quick-drying cement. Like the video essays said, you really do get attached to ideas and concepts that you put down and don't think about. In my case, I made up some stats to play around with, and the one stat that matters was Speed. So I made a mage called Mage with 5 movement per turn, a Rogue called Rogue with 8, and a knight called Knight with 4 movement every turn. And already, just from the manner I've moved all these pieces around the imaginary board has already begun to imbue them with character. I'm already feeling how the rogue moves quick and serves as an advance scout, and so needs to be bad in combat to make up for it. Perhaps some kind of monk build without ranged weapons that the Knight and Mage can make up for with arrows and spells.</p>
 		<p>So next step forward is to add the combat system and make these individual HP bars start to mean something. Add a super rudimentary enemy and start messing around with combat numbers until I get something reasonably satisfying with the systems I have.</p> 
 	`},
+	{ title: "13 Jul, 2026", content: `
+		<h4>Murderhoboes - Dev Diary Entry 2.</h4>
+		<p>So far into the project, I've been very consciously avoiding talking, writing, or thinking about the idea of [b]what[/b] this game will be about. I've been adding features, mechanics, and ideas into the game - such as a visual novel-style text parser, grid-based map overlays, and other fun fineries - without any consideration for how they're gonna be seen or what they represent in the game.</p>
+		<p>Sadly, that's gonna have to end soon.</p>
+		<p>At some point, I'm gonna have to bite the bullet and start adding lines of text into this game that I expect a player to read, and those things are going to affect the way this project plays out.</p>
+		<p>Working with theoretical concepts is like working with quick-drying cement, as some people say. As soon as you've placed down a placeholder, it can be so difficult to remove it. The version you'll put down will never look quite right because you've been staring at thhe old, janky version enough that you've fallen in love with it.</p>
+		<p>Sadly, the only way around that is hard work.</p>
+		<p>Which is what i'll have to do. So i'll just go ahead and do that.</p>
+	`},
+
+
 //	{ title: "07 May, 2026", content: `
 //		<p></p>
 //	`},
@@ -101,7 +112,6 @@ const diaryEntries = [
 
 //list of themes. Light/Dark, brightest colour first, darkest colour last)
 const themePairs = [
-	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Play","Clay"],},
 	{colors:["#40332f","#856d52","#95c798","#fbffe0",],names:["Choco","Mint"],},
 	{colors:["#002b59","#005f8c","#00b9be","#9ff4e5",],names:["Black","Aqua"],},
 	{colors:["#00002a","#0001d5","#ff17ca","#fff6fd",],names:["Neon","Blink"],},
@@ -142,7 +152,6 @@ const themePairs = [
 	{colors:["#fffdaf","#ff3796","#00faac","#302387",],names:["Fuzzy","Iconic"],},
 	{colors:["#312b24","#3c1402","#e96f1b","#ca9a57",],names:["Corn","Combine"],},
 	{colors:["#2c2137","#446176","#3fac95","#a1ef8c",],names:["Nymph","Maniac"],},
-	{colors:["#202020","#5e6745","#aeba89","#e3eec0",],names:["Hundred","Alma"],},
 	{colors:["#220780","#615fed","#ffba5a","#fffab2",],names:["Cosmic","Cream"],},
 	{colors:["#131726","#59608e","#61b8ae","#dde0bd",],names:["Zero-Sum","One"],},
 	{colors:["#151640","#3f6d9e","#f783b0","#e6f2ef",],names:["Popular","Star"],},
@@ -200,6 +209,7 @@ const themePairs = [
 	{colors:["#181322","#4b372c","#a2423a","#cdc1a7",],names:["Marmalade","Mulch"],},
 	{colors:["#1e1d39","#253a5e","#a8ca58","#da863e",],names:["Spaceman","Spliff"],},
 	{colors:["#1e1d39","#402751","#c65197","#df84a5",],names:["Aphrodite","Venus"],},
+	{colors:["#202020","#5e6745","#aeba89","#e3eec0",],names:["Almanac","Memories"],},
 	{colors:["#381631","#105390","#fea85f","#d8dcb4",],names:["Tangerine","Assist"],},
 	{colors:["#341c27","#253a5e","#de9e41","#a4dddb",],names:["Aperture","Science"],},
 	{colors:["#5c007e","#fe6ecd","#48cedf","#e5e695",],names:["Dayglow","Eighties"],},
@@ -218,6 +228,7 @@ const themePairs = [
 	{colors:["#28192f","#5f5f6e","#f8401b","#cecac9",],names:["Pomegranite","Steel"],},
 	{colors:["#341c27","#602c2c","#de9e41","#e8c170",],names:["Accidental","Orange"],},
 	{colors:["#4d2b32","#7a4841","#d7b594","#e7d5b3",],names:["Borogravian","Brown"],},
+	{colors:["#010101","#000871","#63ffba","#ff79ae",],names:["Cybernetic","Revolt"],},
 	{colors:["#260016","#ed008c","#00bff3","#daf3ec",],names:["Equality","Inclusion"],},
 	{colors:["#1b192a","#c93864","#35cbc8","#ffdb85",],names:["Half-tone","Printing"],},
 	{colors:["#151515","#1880f8","#ff82ce","#ffe737",],names:["Classic","Impression"],},
@@ -228,6 +239,3 @@ const themePairs = [
 	//{colors:["#yyyyyy","#yyyyyy","#yyyyyy","#yyyyyy",],names:["yyy","yyy"],},
 	//{colors:["#yyyyyy","#yyyyyy","#yyyyyy","#yyyyyy",],names:["yyy","yyy"],},
 ];
-
-
-
