@@ -103,6 +103,9 @@ const diaryEntries = [
 		<p>Which is what i'll have to do. So i'll just go ahead and do that.</p>
 	`},
 
+	{ title: "17 Jul, 2026", content: `
+		<p>Gosh, it's been a whirlwind couple of weeks. I can't wait until this sunday where I can go back to not caring about football for the next four years.</p>
+	`},
 
 //	{ title: "07 May, 2026", content: `
 //		<p></p>
