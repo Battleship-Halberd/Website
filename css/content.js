@@ -95,7 +95,7 @@ const diaryEntries = [
 	`},
 	{ title: "13 Jul, 2026", content: `
 		<h4>Murderhoboes - Dev Diary Entry 2.</h4>
-		<p>So far into the project, I've been very consciously avoiding talking, writing, or thinking about the idea of [b]what[/b] this game will be about. I've been adding features, mechanics, and ideas into the game - such as a visual novel-style text parser, grid-based map overlays, and other fun fineries - without any consideration for how they're gonna be seen or what they represent in the game.</p>
+		<p>So far into the project, I've been very consciously avoiding talking, writing, or thinking about the idea of <b>what</b> this game will be about. I've been adding features, mechanics, and ideas into the game - such as a visual novel-style text parser, grid-based map overlays, and other fun fineries - without any consideration for how they're gonna be seen or what they represent in the game.</p>
 		<p>Sadly, that's gonna have to end soon.</p>
 		<p>At some point, I'm gonna have to bite the bullet and start adding lines of text into this game that I expect a player to read, and those things are going to affect the way this project plays out.</p>
 		<p>Working with theoretical concepts is like working with quick-drying cement, as some people say. As soon as you've placed down a placeholder, it can be so difficult to remove it. The version you'll put down will never look quite right because you've been staring at thhe old, janky version enough that you've fallen in love with it.</p>
