@@ -102,7 +102,6 @@ const diaryEntries = [
 		<p>Sadly, the only way around that is hard work.</p>
 		<p>Which is what i'll have to do. So i'll just go ahead and do that.</p>
 	`},
-
 	{ title: "17 Jul, 2026", content: `
 		<p>Gosh, it's been a whirlwind couple of weeks. I can't wait until this sunday where I can go back to not caring about football for the next four years.</p>
 	`},
@@ -224,7 +223,7 @@ const themePairs = [
 	{colors:["#300030","#602878","#f89020","#f8f088",],names:["Hallowed","Pumpkin"],},
 	{colors:["#2d162c","#412752","#683a68","#9775a6",],names:["Velveteen","Cherry"],},
 	{colors:["#1c1412","#635650","#d3ae21","#d4c9c3",],names:["Internal","Voltage"],},
-	{colors:["#0d2b45","#544e68","#d08159","#ffd4a3",],names:["Waterfall","Splash"],},
+	{colors:["#0d2b45","#544e68","#d08159","#ffd4a3",],names:["Seascape","Sunfoam"],},
 	{colors:["#332c50","#46878f","#94e344","#e2f3e4",],names:["Kirokaze","Gameplay"],},
 	{colors:["#381a3e","#8b506d","#f890a8","#f6edc1",],names:["Strawberry","Window"],},
 	{colors:["#5a3921","#6b8c42","#7bc67b","#ffffb5",],names:["Verdant","Awakening"],},
