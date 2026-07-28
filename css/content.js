@@ -2,7 +2,7 @@ const diaryEntries = [
 	{ title: "Welcome to my webbed site.", content:`
 		<p>It takes up about 30kb and relies on no third-party scripts.</p>
 		<p>I have a lot of random things and here is a short, simple website to collate and tag a bunch of them to essentially serve as my diary. Please don't expect this page to be updated very often. Honestly, you should be surprised that you're getting this much.</p>
-		<p>Much love, Chef Bloof. Aka, Battleship Halbird, aka Craiture deLelioaha.</p>
+		<p>Much love, Chef Bloof. Aka, Battleship Halberd, aka Craiture deLelioaha.</p>
 		<p>This is <b>bold</b>, and this is <i>italics</i>, and this is <i><b>both</b></i></p>
 	`},
 	{title: "My recent projects.", content: `
