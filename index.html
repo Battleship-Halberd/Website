@@ -61,10 +61,11 @@
 			a { color: var(--m-b); text-decoration: none;}
 			a:hover, a:hover * { color: var(--m-a); }
 
-			main {display: flex; 
-				 	justify-content: 
-				 	space-evenly; width: 100%;
-					padding-inline: calc(15px + 0.5vmin); }
+			main {
+				display: flex; 
+				justify-content: center;
+				padding-inline: calc(15px + 0.5vmin); 
+			}
 
 			.gridContainer {
 				display: grid;
@@ -90,15 +91,20 @@
 				border-left: 1.0vmin solid var(--m-b);
 			}
 			
-			#left {grid-area: left;}
+			#left {
+				grid-area: left;
+			}
 
-			#center { grid-area: center; }
+			#center {
+				grid-area: center;
+			}
 			
 			main > div > section > div {
 				border: 0.1vmin solid var(--m-b);
 				background: var(--m-c);
 				gap: calc(20px + 1.5vmin);
 			}
+
 			#center > div:not(.subheader, .chess) {
 				margin: 2.5vmin 0;
 				padding-left: 2.5vmin;
@@ -205,7 +211,6 @@
 					margin: 1vmin 20px;
 				}
 			}
-
 
 		</style>
 		<title>Craiture's Blog</title>
