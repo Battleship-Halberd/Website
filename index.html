@@ -61,17 +61,21 @@
 			a { color: var(--m-b); text-decoration: none;}
 			a:hover, a:hover * { color: var(--m-a); }
 
-			main {display: flex; justify-content: space-evenly; width: 100%; padding-block: 3px; }
+			main {display: flex; 
+				 	justify-content: 
+				 	space-evenly; width: 100%;
+					padding-inline: calc(15px + 0.5vmin); }
 
 			.gridContainer {
 				display: grid;
-				grid-template-columns: 20% 80%;
+				grid-template-columns:
+				calc(20% - 0.5 * (20px + 1.5vmin))
+					calc(80% - 0.5 * (20px + 1.5vmin));
 				grid-template-areas:
 					"topbar topbar"
 					"left center";
 				gap: calc(20px + 1.5vmin);
-				width: calc(100% - 2 * (15px + 0.5vmin));
-				padding-right: calc(15px + 0.5vmin);
+				width: 100%;
 			}
 
 			#topbar {
@@ -90,7 +94,7 @@
 
 			#center { grid-area: center; }
 			
-			main > div > div > div {
+			main > div > section > div {
 				border: 0.1vmin solid var(--m-b);
 				background: var(--m-c);
 				gap: calc(20px + 1.5vmin);
@@ -179,7 +183,7 @@
 			}
 
 			.inset,
-			main > div > div > div {
+			main > div > section > div {
 				background: var(--m-c);
 				border: 0.1vmin solid var(--m-b);
 			}
@@ -218,7 +222,7 @@
 					<h3><a href="#entry1">Archive</a></h3>
 					<h3><a href="#entry2">Contact Me!</a></h3>
 				</div>
-				<div id="left">
+				<aside id="left">
 					<div class="chess">
 						<section class="board"></section>
 					</div>
@@ -247,8 +251,8 @@
 							<li><a href="https://bsky.app/profile/umlammergeier.bsky.social/">Bluesky</a></li>
 						</ul>
 					</div>
-				</div>
-				<div id="center">
+				</aside>
+				<section id="center">
 					<div class="subheader"><h2>Proud home of nothing in particular.</h2></div>
 					<div id="entries"></div>
 					<div>
@@ -259,7 +263,7 @@
 							<li><a href="https://drcat.fun/">This guy</a>'s site is cool too.</li>
 						</ul>
 					</div>
-				</div>
+				</section>
 			</div>
 			<script>
 			function generateThemes() {
@@ -274,7 +278,7 @@
 				const makeItem = pair => {
 					const li = document.createElement("li");
 					li.append(makeLink(pair.names[0], pair.colors), " ",
-							  makeLink(pair.names[1], [...pair.colors].reverse()));
+							makeLink(pair.names[1], [...pair.colors].reverse()));
 					return li;
 				};
 				[...themePairs].sort(()=>Math.random()-.5).slice(0,10)
