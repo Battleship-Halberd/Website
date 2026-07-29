@@ -99,7 +99,7 @@
 				grid-area: center;
 			}
 			
-			main > div > section > div {
+			#center > div {
 				border: 0.1vmin solid var(--m-b);
 				background: var(--m-c);
 				gap: calc(20px + 1.5vmin);
@@ -129,13 +129,11 @@
 				list-style-position: inside;
 				margin: 0.5vmin;
 				padding-left: 1vmin;
-				list-style-type: "◇ ";
+				list-style-type: "❖ ";
 			}
 
 			#allPosts, #allThemes {	flex-direction: row;}
-			.chess, .inset {margin: 0; padding: 0;}
-
-			.chess {}
+			.chess {margin: 0; padding: 0;}
 
 			.inset {
 				margin: calc(6.25% + 0.1vmin);
@@ -169,7 +167,6 @@
 				align-items: center;
 				justify-content: center;
 				width: 6.25%;
-				font-weight: 300;
 				transition: background 0.2s ease, color 0.2s ease;
 			}
 
@@ -186,12 +183,6 @@
 			/* Interaction */
 			.step_box:hover {
 				background: var(--m-b);
-			}
-
-			.inset,
-			main > div > section > div {
-				background: var(--m-c);
-				border: 0.1vmin solid var(--m-b);
 			}
 
 			@media (max-width: 768px) {
@@ -264,7 +255,7 @@
 						<h5>Boring Legal Stuff</h5>
 						<ul>
 							<li>Website made by Craiture deLelioaha.</li>
-							<li>Site last updated on the 13th of July, 2026</li>
+							<li id="lastUpdated"></li>
 							<li><a href="https://drcat.fun/">This guy</a>'s site is cool too.</li>
 						</ul>
 					</div>
@@ -349,11 +340,20 @@
 				const m = location.hash.match(/entry(\d+)/);
 				if (m) showEntry(parseInt(m[1]));
 			}
+			function lastUpdated() {
+				const latestIndex = diaryEntries.length - 1;
+				const latest = diaryEntries[latestIndex];
+
+				document.getElementById("lastUpdated").innerHTML =
+					`Site last updated on <a href="#entry${latestIndex}">${latest.title}</a>`;
+			}
+
 			window.addEventListener('hashchange', showFromHash);
 			window.addEventListener('load', () => {
 				applyRandomTheme(); 
 				generateThemes();
 				showFromHash();
+				lastUpdated();
 				document.querySelectorAll('.board').forEach(b => makeBoard(b, 16, 16));
 				document.querySelectorAll('.shortboard').forEach(b => makeBoard(b, 2, 16));
 				if (!location.hash) showEntry(0);
