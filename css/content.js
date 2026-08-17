@@ -105,6 +105,11 @@ const diaryEntries = [
 	{ title: "17 Jul, 2026", content: `
 		<p>Gosh, it's been a whirlwind couple of weeks. I can't wait until this sunday where I can go back to not caring about football for the next four years.</p>
 	`},
+	{ title: "17 Aug, 2026", content: `
+		<p>Summer's so fun to just disconnect.</p>
+		<p>It's so nice to get a chance to turn one's head off and drain your own brain of all those pesky little thoughts for a month or so.</p>
+		<p>But I gotta get my brain back to normal</p>
+	`},
 
 //	{ title: "07 May, 2026", content: `
 //		<p></p>
